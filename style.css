@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c3f3fc;
+  color: #ffffff;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 990px;
+}
+.header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 2px 2px 15px #333333;
+  background-color: #2f6b75;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: 38px;
+  line-height: 42px;
+}
+
+.header__btn {
+  padding: 10px;
+  width: 100%;
+  max-width: 150px;
+  background-color: #042025;
+  border: 2px solid #c3f3fc;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header__btn:hover {
+  box-shadow: 2px 2px 15px #333333;
+}
+
+.main {
+  padding: 50px 0;
+  margin-top: 87px;
+}
+.notes {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #333333;
+}
+.note__container {
+  max-width: 300px;
+  box-shadow: 4px 4px 8px #333333;
+  width: 100%;
+  background-color: #fefeff;
+  margin: 0 20px 20px 0;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+}
+.note__header {
+  position: relative;
+  padding: 0.75em 0.5em;
+}
+.note__title {
+  font-style: italic;
+}
+.note__delete {
+  text-decoration: none;
+  color: #ffffff;
+  position: absolute;
+  border-radius: 100%;
+  border: 1px solid #ac1902;
+  background-color: #ff2200;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.note__delete:hover {
+  box-shadow: 2px 2px 15px #333333;
+}
+
+.note__content {
+  padding: 10px;
+  min-height: 100px;
+  margin-bottom: 30px;
+  outline: none;
+}
+.note__footer {
+  padding: 0.5em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.note__color-option {
+  display: block;
+  float: right;
+  overflow: hidden;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #cbcbcb;
+  margin: 0 0.25em;
+  box-shadow: 1px 1px 2px #cbcbcb;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.note__color-option.is-active {
+  transform: scale(1.5);
+}
